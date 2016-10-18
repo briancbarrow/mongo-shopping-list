@@ -42,6 +42,7 @@ describe('Shopping List', function() {
                 done();
             });
     });
+    
     it('should add an item on POST', function(done) {
         chai.request(app)
             .post('/items')
