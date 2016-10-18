@@ -64,7 +64,6 @@ describe('Shopping List', function() {
             .put('/items/57bd1593d8cd9fe199ccee11')
             .send({'name': 'Peppe', '_id': '57bd1593d8cd9fe199ccee11'})
             .end(function(err, res) {
-                console.log(res.body);
                 should.equal(err, null);
                 res.should.have.status(201);
                 res.body.should.not.equal('null');
