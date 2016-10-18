@@ -49,11 +49,11 @@ app.delete('/items/:id', function(req, res) {
 });
 
 app.put('/items/:id', function(req, res) {
-    // Item.find({}, function(err, items) {
-    //     if(!err) {
-    //         console.log(items);
-    //     }
-    // });
+    Item.find({}, function(err, items) {
+        if(!err) {
+            console.log(items);
+        }
+    });
     Item.findOneAndUpdate({_id: req.body._id}, {name: req.body.name}, {new: true}, function(err, item) {
         if(err) {
             return res.status(500).json({
