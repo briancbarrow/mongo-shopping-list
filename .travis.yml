@@ -8,3 +8,10 @@ addons:
     - mongodb-3.2-precise
     packages:
     - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key:
+    secure: gXgYHc65BXiukNIX2cQcT31hqjR1nNX57bcQhCNRe2I3Zdn2bXwTQUfSJEhFHlGnlEgtRNvNm5YSfZW2BoJI0jh0+uOj1PRGnR90tEBRStT2nFaOeTTXknibKqh4TfjgKvO/84yTSS84ukm/MqQNuYjeMfEHquS5fLe4RRU4tW6EAmH15ZHW9B3KXMfZaEM6Jvysx5l9ayKz21uCs4PwvSb7npJO/b5FAU8gm6e7/zFztiZbBXqnMbV67+8WcWXDcuJGEy8obq+HwKu99/XFU9x17xXVTShi1cLtPaOVcwn6pknMwnIq4xpQeYCaFQzwWl5k/2e0/oB+ZvFe5oXfq4RINuihdxnmSnYJbP4LNn9JYyJCFYJC8z0epevoBkljK1X/U63BZJOwJhCfGCkDYQ+fd4z30wFwK1225uA8guScA+wEms8dsCncWqW/Z/m8TiqA7PfwySfJ9IbzdMgnEcuYsujxGc45GU8hHjIwjA2v7jhr/0VCA1MePPq2GUhAdhIwZXO3gfHLXS+Rl2Cg1NNue9juhfK+yp1Vskah1PKbmmgHnBjEKT9cdKJmVLKpCK+mlemzV9O4vUuRPAg7RxkWb6azv/Ir59ZZSDS5vRkqXuO61K/2kgU9RuWQf7b1gZABM6CuQRZCU5pHRxraBqCIZuxyNt+DppMg+AiRhQU=
+  app: nameless-stream-48310
+  on:
+    repo: briancbarrow/mongo-shopping-list
