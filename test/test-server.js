@@ -10,6 +10,7 @@ var should = chai.should();
 var app = server.app;
 
 chai.use(chaiHttp);
+chai.use(require('chai-things'));
 
 describe('Shopping List', function() {
     before(function(done) {
@@ -35,7 +36,7 @@ describe('Shopping List', function() {
                 res.body[0].should.have.property('name');
                 res.body[0]._id.should.be.a('string');
                 res.body[0].name.should.be.a('string');
-                res.body.should.include.something.that.deep.equals({name: 'Broad beans', _id: '57bd1593d8cd9fe199ccee0f');
+                res.body.should.include.something.that.deep.equals({name: 'Broad beans', _id: '57bd1593d8cd9fe199ccee0f'});
                 res.body[2].name.should.equal('Tomatoes');
                 res.body[1].name.should.equal('Peppers');
                 done();
