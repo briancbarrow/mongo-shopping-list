@@ -12,7 +12,6 @@ var app = server.app;
 chai.use(chaiHttp);
 
 describe('Shopping List', function() {
-    
     before(function(done) {
         server.runServer(function() {
             Item.create({name: 'Broad beans', _id: '57bd1593d8cd9fe199ccee0f'},
