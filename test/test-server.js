@@ -39,9 +39,6 @@ describe('Shopping List', function() {
                 res.body.should.include({ _id: '57bd1593d8cd9fe199ccee0f', name: 'Broad beans', __v: 0 });
                 res.body.should.include({ _id: '57bd1593d8cd9fe199ccee10', name: 'Tomatoes', __v: 0 });
                 res.body.should.include({ _id: '57bd1593d8cd9fe199ccee11', name: 'Peppers', __v: 0 });
-                res.body[2].name.should.equal('Tomatoes');
-                res.body[1].name.should.equal('Peppers');
-                done();
             });
     });
     
